@@ -18,14 +18,6 @@ function solveEquation(a, b, c) {
 }
 
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
-  if (
-    typeof percent !== "number" ||
-    typeof contribution !== "number" ||
-    typeof amount !== "number" ||
-    typeof countMonths !== "number"
-  ) {
-    return NaN;
-  }
 
   const percentDecimal = percent / 100;
   const monthlyPercent = percentDecimal / 12;
